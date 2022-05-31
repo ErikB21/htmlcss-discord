@@ -8,11 +8,13 @@
 
 header{
     height: 580px;
-    background-color: blue;
+    background-image: url("../img/jumbo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .header-top{
-    background-color: aqua;
+    background-color: #245EE9;
     height: 90px;
     margin: 0 auto;
     padding: 15px 0;
@@ -29,10 +31,7 @@ header{
 
 .top-logo, .top-login{
     width: 20%;
-    height: 40px;
     display: inline-block;
-    border: 1px dotted black;
-    background-color: goldenrod;
 }
 
 
@@ -41,12 +40,9 @@ header{
 }
 
 .top-link{
-    height: 40px;
     text-align: center;
     display: inline-block;
-    border: 1px dotted black;
     flex-grow: 1;
-    background-color: goldenrod;
     align-items: center;
 }
 
@@ -56,8 +52,10 @@ ul{
     list-style: none;
 }
 
-ul li{
-    padding: 0 5px;
+li a{
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -68,11 +66,36 @@ ul li{
 
 header .wallpaper{
     width: 50%;
-    height: 400px;
-    background-color: pink;
+    height: 300px;
     margin: 0 auto;
-    border: 1px dotted black;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
 }
+
+.wallpaper h1, p, button{
+    padding: 15px 0;
+}
+
+.wallpaper p{
+    font-size: 18px;
+}
+
+.wallpaper h1{
+    font-size: 2rem;
+}
+
+button{
+    border-radius: 25px;
+    padding: 8px;
+    border: none;
+}
+
+.but-bl{
+    background-color: black;
+    color: white;
+}
+
 
 /*stilizzazione main*/
 
@@ -81,31 +104,36 @@ main{
 }
 
 .gray{
-    background-color: gray;
-    padding: 50px;
+    background-color: lightgray;
+    padding: 30px 50px 30px 50px;
 }
 
 .white{
-    padding: 50px;
+    padding: 30px 50px 30px 50px;
 }
 
 .main-top{
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
-    height: 400px;
-    margin: 0 auto;
-    border: 1px dotted black; 
-}
-
-.main-img{
-    width: 60%;
-    background-color: aquamarine;
+    height: 500px;
+    margin: 0 auto; 
 }
 
 .main-text{
     width: 40%;
-    background-color: salmon;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.main-text h2{
+    font-size: 3rem;
+}
+
+.main-text p{
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 20px;
 }
 
 .main-bottom{
@@ -125,7 +153,7 @@ footer{
 }
 
 .top-footer{
-    width: 1200px;
+    max-width: 1000px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
