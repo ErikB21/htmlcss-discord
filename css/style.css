@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
  
 /*stilizzazione header*/
 
@@ -87,17 +91,17 @@ header .wallpaper{
 
 button{
     border-radius: 25px;
-    padding: 8px;
+    padding: 10px;
     border: none;
 }
 
-.but-bl{
+.but-black{
     background-color: black;
     color: white;
 }
 
 
-/*stilizzazione main*/
+/*main*/
 
 main{
     margin: 0 auto;
@@ -116,7 +120,7 @@ main{
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    height: 600px;
     margin: 0 auto; 
 }
 
@@ -131,25 +135,40 @@ main{
 }
 
 .main-text p{
-    font-weight: 400;
+    font-weight: 200;
     padding-top: 10px;
     line-height: 20px;
 }
 
 .main-bottom{
-    width: 70%;
-    height: 1000px;
-    background-color: green;
+    width: 80%;
+    height: 800px;
     margin: 0 auto;
-    border: 1px dotted black;
+    text-align: center;
+}
+
+.main-stars{
+    text-align: center;
+}
+
+
+.end-main h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+.but-blue{
+    background-color: #5865F2;
+    color: white;
 }
 
 /*stilizzazione footer*/
 
 footer{
     background-color: black;
-    height: 600px;
-    padding: 10px 0px;
+    height: 500px;
+    padding: 20px 0px;
 }
 
 .top-footer{
@@ -158,32 +177,57 @@ footer{
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 20px;
+    border-bottom: 2px solid #5865F2;
 }
 
 .footer-text{
-    height: 300px;
-    width: 30%;
-    background-color: salmon;
-    border: 1px dotted white;
+    width: 25%;
+    color: white;
+    background-color: black;
+}
+
+.footer-text h3{
+    color: #5865F2;
+    padding: 20px 0;
+    font-size: 2rem;
+}
+
+.text-logo-footer img{
+    width: 20px;
+}
+
+.icons-footer i{
+    padding: 10px 15px 0px 0px;
 }
 
 .footer-link{
-    height: 300px;
-    width: calc(70% / 4);
-    background-color: aqua;
-    border: 1px dotted white;
+    height: 400px;
+    width: calc(75% / 4);
+    text-align: center;
+}
+.footer-link h4{
+    color: #5865F2;
+    font-weight: 700;
+}
+
+.footer-link ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link ul li{
+    padding-top: 15px;
 }
 
 .bottom-footer{
     height: 60px;
-    border: 1px dotted white;
     padding: 10px 15px;
 }
 
 .end-footer{
-    width: 70%;
+    max-width: 1000px;
     height: 35px;
-    background-color: goldenrod;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
