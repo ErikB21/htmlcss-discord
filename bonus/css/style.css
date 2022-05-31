@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+ 
+/*stilizzazione header*/
+
+header{
+    background-image: url("../img/jumbo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-top{
+    background-color: #245EE9;
+    height: 90px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-yellow{
+    line-height: 35px;
+    width: 70%;
+    display: flex;
+}
+
+.top-logo, .top-login{
+    width: 20%;
+    display: inline-block;
+}
+
+
+.top-login{
+    text-align: right;
+}
+
+.top-link{
+    text-align: center;
+    display: inline-block;
+    flex-grow: 1;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li a{
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.top-img{
+    padding: 45px 0;
+}
+
+
+header .wallpaper{
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.wallpaper h1, p, button{
+    padding: 15px 0;
+}
+
+.wallpaper p{
+    font-size: 18px;
+}
+
+.wallpaper h1{
+    font-size: 2rem;
+}
+
+button{
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+}
+
+.but-black{
+    background-color: black;
+    color: white;
+}
+
+
+/*main*/
+
+main{
+    margin: 0 auto;
+}
+
+.gray{
+    background-color: lightgray;
+    padding: 30px 50px 30px 50px;
+}
+
+.white{
+    padding: 30px 50px 30px 50px;
+}
+
+.main-top{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+
+.main-text{
+    width: 40%;
+    text-align: left;
+    padding-top: 50px;
+}  
+
+.main.img{
+    width: 60%;
+}
+
+.main-text h2{
+    font-size: 3rem;
+}
+
+.main-text p{
+    font-weight: 200;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.main-bottom{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.end-main .stars{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+}
+
+
+.end-main h2{
+    font-size: 1,5rem;
+    margin-bottom: 30px;
+    padding-top: 15px;
+}
+
+
+.but-blue{
+    background-color: #5865F2;
+    color: white;
+}
+
+/*stilizzazione footer*/
+
+footer{
+    background-color: black;
+    padding: 20px 0px;
+}
+
+.top-footer{
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5865F2;
+}
+
+.footer-text{
+    width: 25%;
+    color: white;
+    background-color: black;
+}
+
+.footer-text h3{
+    color: #5865F2;
+    padding: 20px 0;
+    font-size: 2rem;
+}
+
+.text-logo-footer img{
+    width: 20px;
+}
+
+.icons-footer i{
+    padding: 10px 15px 0px 0px;
+}
+
+.footer-link{
+    width: calc(75% / 4);
+    text-align: center;
+}
+.footer-link h4{
+    color: #5865F2;
+    font-weight: 700;
+}
+
+.footer-link ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link ul li{
+    padding-top: 15px;
+}
+
+.bottom-footer{
+    height: 60px;
+    padding: 10px 15px;
+}
+
+.end-footer{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
