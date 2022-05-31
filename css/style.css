@@ -11,7 +11,6 @@ body{
 /*stilizzazione header*/
 
 header{
-    height: 580px;
     background-image: url("../img/jumbo.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -27,7 +26,6 @@ header{
 }
 
 .top-yellow{
-    height: 45px;
     line-height: 35px;
     width: 70%;
     display: flex;
@@ -120,7 +118,6 @@ main{
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
-    height: 600px;
     margin: 0 auto; 
 }
 
@@ -128,6 +125,10 @@ main{
     width: 40%;
     text-align: left;
     padding-top: 50px;
+}  
+
+.main.img{
+    width: 60%;
 }
 
 .main-text h2{
@@ -142,19 +143,24 @@ main{
 
 .main-bottom{
     width: 80%;
-    height: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.main-stars{
+
+.end-main .stars{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
     text-align: center;
 }
 
 
 .end-main h2{
-    font-size: 2rem;
+    font-size: 1,5rem;
     margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 
@@ -167,7 +173,6 @@ main{
 
 footer{
     background-color: black;
-    height: 500px;
     padding: 20px 0px;
 }
 
@@ -201,7 +206,6 @@ footer{
 }
 
 .footer-link{
-    height: 400px;
     width: calc(75% / 4);
     text-align: center;
 }
@@ -227,11 +231,11 @@ footer{
 
 .end-footer{
     max-width: 1000px;
-    height: 35px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 
