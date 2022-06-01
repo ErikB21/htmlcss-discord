@@ -96,6 +96,7 @@ button{
 .but-black{
     background-color: black;
     color: white;
+    margin-left: 10px;
 }
 
 
@@ -106,7 +107,7 @@ main{
 }
 
 .gray{
-    background-color: lightgray;
+    background-color: #CCCCCC;
     padding: 30px 50px 30px 50px;
 }
 
@@ -238,70 +239,62 @@ footer{
 }
 
 /* personalizzazione button*/
-.jello-horizontal {
-	-webkit-animation: jello-horizontal 2s both;
-	        animation: jello-horizontal 2s both;
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.9s linear infinite both;
+	        animation: vibrate-1 0.9s linear infinite both;
 }
 
 
-@-webkit-keyframes jello-horizontal {
+ @-webkit-keyframes vibrate-1 {
     0% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+      -webkit-transform: translate(0);
+              transform: translate(0);
     }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
     }
     40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
     }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-              transform: scale3d(1.15, 0.85, 1);
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
     }
-    65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-              transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-              transform: scale3d(1.05, 0.95, 1);
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
     }
     100% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+      -webkit-transform: translate(0);
+              transform: translate(0);
     }
   }
-  @keyframes jello-horizontal {
+  @keyframes vibrate-1 {
     0% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+      -webkit-transform: translate(0);
+              transform: translate(0);
     }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
     }
     40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
     }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-              transform: scale3d(1.15, 0.85, 1);
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
     }
-    65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-              transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-              transform: scale3d(1.05, 0.95, 1);
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
     }
     100% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+      -webkit-transform: translate(0);
+              transform: translate(0);
     }
   }
   
@@ -310,4 +303,50 @@ footer{
       color: aqua;
       opacity: 0.4;
   }
+
+  /*personalizzazione h1*/
+
+  .focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 both;
+}
+
+ @-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
   
+
+  /*aggiunta wave*/
+
+  .wave{
+      background-image: url(../img/wave.svg);
+      height: 100px;
+      filter: opacity(0.2);
+  }
+  
+  .wave.reverse{
+      transform: rotateX(180deg);
+  }
